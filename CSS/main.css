@@ -3,7 +3,7 @@ body {
   text-align: justify;
   max-width: 1000px;
   margin: auto;
-  background-color: rgb(219, 216, 216);
+  background-color: rgb(241, 242, 231);
 }
 .card-container {
   display: flex;
@@ -13,12 +13,12 @@ body {
 }
 .text-container {
   margin-top: 20px;
-  background-color: rgb(234, 245, 245);
+  background-color: rgb(92, 88, 88, 0.8);;
   position: relative;
-  border: 2px solid grey;
+  border: 1px solid  rgb(212, 212, 22);
   padding: 0 30px;
   border-radius: 20px;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 5px 5px 20px rgb(118, 118, 115);
   width: 35%;
 }
 .gift{
@@ -34,6 +34,7 @@ body {
 
 .text {
   font-size: 24px;
+  color: rgb(212, 212, 22)
 }
 .more-text {
   display: none;
@@ -57,4 +58,8 @@ body {
 }
 .coffee{
     color: rgb(93, 48, 17);
+}
+h2{
+color: rgb(212, 212, 22)
+  ;
 }
