@@ -1,13 +1,23 @@
 console.log("labas")
 
-const readMoreBtn = document.querySelector(".read-more-btn");
-const text = document.querySelector(".text");
 
-readMoreBtn.addEventListener("click", (e)=>{
-    text.classList.toggle("show-more");
-    if(readMoreBtn.innerText === "Read More"){
-        readMoreBtn.innerText = "Read Less";
-    }else{
-        readMoreBtn.innerText = "Read More";
+const readMoreBtn = document.querySelectorAll(".read-more-btn");
+const text = document.querySelectorAll(".text");
+const triangle=document.querySelectorAll(".text-container");
+
+
+readMoreBtn.forEach((button, index) => {
+  button.addEventListener("click", (e) => {
+    text[index].classList.toggle("show-more");
+    if (button.innerText === "Read More") {
+      button.innerText = "Read Less";
+      button.style.backgroundColor = "rgb(145, 233, 204)";
+    } else {
+      button.innerText = "Read More";
+      button.style.backgroundColor = "rgb(201, 188, 234)";
+      
+
     }
-})
+  });
+});
+
